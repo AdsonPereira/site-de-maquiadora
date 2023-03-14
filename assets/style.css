@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.navegacao {
+    margin-left: auto;
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+a {
+    margin: 5px;
+}
+
+#logo {
+    margin: 2% 0 2% 6% ; 
+    width: 18%;
+    height: 18%;
+}
+
+.bemvindo img {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+} 
+
+.textobemvindo {
+    margin: 10% 0 10% 0;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    z-index: 2;
+}
+
+.servicos{
+    margin: 10px 0 10px 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.servicos > .titulo {
+    margin: 60px;
+    text-align: center;
+}
+
+/*
+.servico1 {
+    flex-direction: row;
+}*/
+
+.servico1-texto {
+    width: 250px;
+}
+
+.servico1-img {
+    width: 250px;
+}
