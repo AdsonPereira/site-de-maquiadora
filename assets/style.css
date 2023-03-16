@@ -26,29 +26,37 @@ a {
     height: 18%;
 }
 
-.bemvindo img {
+.bemvindo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     width: 100%;
+    height: max(140px, 37vw);
+}
+
+.bemvindo img {
     position: absolute;
     z-index: -1;
+    width: 100%;
+    height: max(140px, 37vw);
 } 
 
 .textobemvindo {
-    margin: 10% 0 10% 0;
-    padding: 10px;
+    position: relative;
+    text-align: center;
     font-family:serif;
     font-weight: 10;
-    text-align: center;
     z-index: 2;
+    margin: 5%;
 }
 
 .servicos{
-    margin: 10px 0 10px 0;
     background-color: rgb(255, 255, 255);
     flex-direction: row;
 }
 
 .servicos > .titulo {
-    margin: 100px;
+    margin: 8%;
     text-align: center;
     font-size: max(16px, 5vw);
 }
@@ -57,30 +65,93 @@ a {
     display: flex;
     flex-direction: row;
     text-align: center;
-    height: auto;
     width: 100%;
-    height: 520px;
-    margin: 20px;
 }
 
 .servico1-texto {
     font-size: max(6px, 1vw);
+    font-family: serif;
+    font-weight:200 ;
     width: 50%;
-    padding: 100px;
+    padding: 15% 9% 15% 8%;
 }
 
+.servico1-texto h3 {
+    width: 100%;
+    font-size: max(6px, 2vw);
+}
 .servico1-texto p {
     width: 100%;
+    font-size: max(6px, 2vw);
 }
 
 .servico1-img {
-    padding: 50px;
     width: 50%;
+    padding: max(35px, 10vw);
 }
 
 .servico1-img img {
-    position: relative;
-    padding: 20px;
     width: 100%;
-    height: 520px;
+}
+
+.servico2 {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    width: 100%;
+}
+
+.servico2-texto {
+    font-size: max(6px, 1vw);
+    width: 50%;
+    padding: 15% 9% 15% 8%;
+}
+
+.servico2-texto h3 {
+    width: 100%;
+    font-size: max(6px, 2vw);
+}
+.servico2-texto p {
+    width: 100%;
+    font-size: max(6px, 2vw);
+}
+
+.servico2-img {
+    width: 50%;
+    padding: max(35px, 10vw);
+}
+
+.servico2-img img {
+    width: 100%;
+}
+
+.servico3 {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+}
+
+.servico3-texto {
+    font-size: max(6px, 1vw);
+    width: 50%;
+    padding: 15% 9% 15% 8%;
+}
+
+.servico3-texto h3 {
+    width: 100%;
+    font-size: max(6px, 2vw);
+}
+.servico3-texto p {
+    width: 100%;
+    font-size: max(6px, 2vw);
+}
+
+.servico3-img {
+    width: 50%;
+    padding: max(35px, 10vw);
+}
+
+.servico3-img img {
+    width: 100%;
 }
