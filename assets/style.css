@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     display: flex;
     flex-direction: column;
@@ -34,7 +35,8 @@ a {
 .textobemvindo {
     margin: 10% 0 10% 0;
     padding: 10px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:serif;
+    font-weight: 10;
     text-align: center;
     z-index: 2;
 }
@@ -42,22 +44,43 @@ a {
 .servicos{
     margin: 10px 0 10px 0;
     background-color: rgb(255, 255, 255);
+    flex-direction: row;
 }
 
 .servicos > .titulo {
-    margin: 60px;
+    margin: 100px;
     text-align: center;
+    font-size: max(16px, 5vw);
 }
 
-/*
 .servico1 {
+    display: flex;
     flex-direction: row;
-}*/
+    text-align: center;
+    height: auto;
+    width: 100%;
+    height: 520px;
+    margin: 20px;
+}
 
 .servico1-texto {
-    width: 250px;
+    font-size: max(6px, 1vw);
+    width: 50%;
+    padding: 100px;
+}
+
+.servico1-texto p {
+    width: 100%;
 }
 
 .servico1-img {
-    width: 250px;
+    padding: 50px;
+    width: 50%;
+}
+
+.servico1-img img {
+    position: relative;
+    padding: 20px;
+    width: 100%;
+    height: 520px;
 }
