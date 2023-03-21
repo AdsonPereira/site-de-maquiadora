@@ -155,3 +155,21 @@ a {
 .servico3-img img {
     width: 100%;
 }
+
+footer {
+    display: flex;
+    flex-direction: row;
+    font-family: serif;
+    font-size: max(1px, 2vw);
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.informacoes > h2 {
+    margin: 5px;
+}
+
+form > div {
+    margin: 10px;
+}
+
