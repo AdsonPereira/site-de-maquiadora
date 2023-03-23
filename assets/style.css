@@ -31,14 +31,14 @@ a {
     flex-direction: column;
     text-align: center;
     width: 100%;
-    height: max(140px, 37vw);
+    height: max(140px, 41vw);
 }
 
 .bemvindo img {
     position: absolute;
     z-index: -1;
     width: 100%;
-    height: max(140px, 37vw);
+    height: max(140px, 41vw);
 } 
 
 .textobemvindo {
@@ -52,11 +52,10 @@ a {
 
 .servicos{
     background-color: rgb(255, 255, 255);
-    flex-direction: row;
 }
 
 .servicos > .titulo {
-    margin: 8%;
+    margin: 8% 4% 4% 4%;
     text-align: center;
     font-size: max(16px, 5vw);
 }
@@ -64,6 +63,7 @@ a {
 .servico1 {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     text-align: center;
     width: 100%;
 }
@@ -71,18 +71,23 @@ a {
 .servico1-texto {
     font-size: max(6px, 1vw);
     font-family: serif;
-    font-weight:200 ;
+    font-weight: 200;
     width: 50%;
     padding: 15% 9% 15% 8%;
 }
 
 .servico1-texto h3 {
+    background-color: rgba(255, 237, 202, 0.932);
+    border-radius: 50px 0 50px 0;
     width: 100%;
     font-size: max(6px, 2vw);
 }
 .servico1-texto p {
+    text-align: justify;
     width: 100%;
     font-size: max(6px, 2vw);
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .servico1-img {
@@ -108,10 +113,13 @@ a {
 }
 
 .servico2-texto h3 {
+    background-color: rgba(255, 237, 202, 0.932);
+    border-radius: 50px 0 50px 0;
     width: 100%;
     font-size: max(6px, 2vw);
 }
 .servico2-texto p {
+    text-align: justify;
     width: 100%;
     font-size: max(6px, 2vw);
 }
@@ -139,10 +147,13 @@ a {
 }
 
 .servico3-texto h3 {
+    background-color: rgba(255, 237, 202, 0.932);
+    border-radius: 50px 0 50px 0;
     width: 100%;
     font-size: max(6px, 2vw);
 }
 .servico3-texto p {
+    text-align: justify;
     width: 100%;
     font-size: max(6px, 2vw);
 }
@@ -159,17 +170,20 @@ a {
 footer {
     display: flex;
     flex-direction: row;
-    font-family: serif;
-    font-size: max(1px, 2vw);
-    justify-content: space-around;
-    margin-bottom: 100px;
+    background-color: rgb(170, 166, 166);
+    color: rgb(0, 0, 0);
+    justify-content:space-around ;
+    font-family: serif ; 
+    font-weight: 200;
+    padding: 100px ;
 }
 
 .informacoes > h2 {
-    margin: 5px;
+    border-radius: 5px;
+    font-size: max(20px, 2.2vw);
 }
 
-form > div {
-    margin: 10px;
+.informacoes > address, a, label{
+    font-size: max(15px, 1.2vw);
+    color: rgb(0, 0, 0);
 }
-
