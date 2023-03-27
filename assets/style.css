@@ -7,13 +7,19 @@
 body {
     display: flex;
     flex-direction: column;
+    background-color: #f7e8db;
+    
 }
 
 .navegacao {
-    margin-left: auto;
-    margin-top: 15px;
-    margin-right: 15px;
-    margin-bottom: 10px;
+    display: flex;
+    justify-content: end;
+    padding: 2% 4% 2% 0%;
+    border: solid;
+    border-color: #f7e8db;
+    border-width: 1px;
+    border-bottom-color: #7e4c2e ;
+
 }
 
 a {
@@ -44,138 +50,68 @@ a {
 .textobemvindo {
     position: relative;
     text-align: center;
-    font-family:serif;
-    font-weight: 10;
+    color: #260F01;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
     z-index: 2;
-    margin: 5%;
 }
 
-.servicos{
-    background-color: rgb(255, 255, 255);
+#paragrafo-bemvindo {
+    margin: 2%;
 }
 
 .servicos > .titulo {
-    margin: 8% 4% 4% 4%;
+    font-family: 'Playfair Display', serif;
+    font-weight: 10;
+    color: #593E25;
+    margin: 8% 4% 8% 4%;
     text-align: center;
-    font-size: max(16px, 5vw);
+    font-size: max(8px, 2.6vw);
 }
 
-.servico1 {
+.servico h3 {
+    font-weight: lighter;
+    font-size: 4.5vw;
+    color: #9b5d46;
+    background-color: #F2D8C2;
+    border-radius: 5px 5px 0px 0px;
+    width: 100%;
+    height: 100%;
+    padding: 6px;
+}
+.servico p {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: center;
-    width: 100%;
-}
-
-.servico1-texto {
-    font-size: max(6px, 1vw);
-    font-family: serif;
-    font-weight: 200;
-    width: 50%;
-    padding: 15% 9% 15% 8%;
-}
-
-.servico1-texto h3 {
-    background-color: rgba(255, 237, 202, 0.932);
-    border-radius: 50px 0 50px 0;
-    width: 100%;
-    font-size: max(6px, 2vw);
-}
-.servico1-texto p {
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
     text-align: justify;
     width: 100%;
-    font-size: max(6px, 2vw);
-    border-radius: 10px;
-    padding: 10px;
+    font-size: max(10px, 2vw);
+    color: #7e4d3b;
+    margin-bottom: 10px;
+    border-width: 2px;
+    border-radius: 0px 0px 3px 3px;
+    border-style: solid;
+    border-color: #F2D8C2;
+    padding: 4px 15px 0px 15px;
 }
 
-.servico1-img {
-    width: 50%;
-    padding: max(35px, 10vw);
+.servico img {
+    margin: 10px 0px 5px 0px;
+    width: max(160px, 25vw);
+    border-radius: 2px;
 }
 
-.servico1-img img {
-    width: 100%;
-}
-
-.servico2 {
-    display: flex;
-    flex-direction: row-reverse;
-    text-align: center;
-    width: 100%;
-}
-
-.servico2-texto {
-    font-size: max(6px, 1vw);
-    width: 50%;
-    padding: 15% 9% 15% 8%;
-}
-
-.servico2-texto h3 {
-    background-color: rgba(255, 237, 202, 0.932);
-    border-radius: 50px 0 50px 0;
-    width: 100%;
-    font-size: max(6px, 2vw);
-}
-.servico2-texto p {
-    text-align: justify;
-    width: 100%;
-    font-size: max(6px, 2vw);
-}
-
-.servico2-img {
-    width: 50%;
-    padding: max(35px, 10vw);
-}
-
-.servico2-img img {
-    width: 100%;
-}
-
-.servico3 {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    width: 100%;
-}
-
-.servico3-texto {
-    font-size: max(6px, 1vw);
-    width: 50%;
-    padding: 15% 9% 15% 8%;
-}
-
-.servico3-texto h3 {
-    background-color: rgba(255, 237, 202, 0.932);
-    border-radius: 50px 0 50px 0;
-    width: 100%;
-    font-size: max(6px, 2vw);
-}
-.servico3-texto p {
-    text-align: justify;
-    width: 100%;
-    font-size: max(6px, 2vw);
-}
-
-.servico3-img {
-    width: 50%;
-    padding: max(35px, 10vw);
-}
-
-.servico3-img img {
-    width: 100%;
-}
 
 footer {
     display: flex;
     flex-direction: row;
-    background-color: rgb(170, 166, 166);
-    color: rgb(0, 0, 0);
+    background-color:  #ebb291;
+    color: #593E25;
     justify-content:space-around ;
-    font-family: serif ; 
+    font-family: 'Playfair Display', serif;
     font-weight: 200;
-    padding: 100px ;
+    padding: 80px 30px 80px 30px ;
 }
 
 .informacoes > h2 {
@@ -184,6 +120,6 @@ footer {
 }
 
 .informacoes > address, a, label{
-    font-size: max(15px, 1.2vw);
-    color: rgb(0, 0, 0);
+    font-size: max(15px, 2vw);
+    color: #593E25;
 }
