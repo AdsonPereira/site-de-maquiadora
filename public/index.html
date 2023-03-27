@@ -1,97 +1,89 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=., initial-scale=1.0">
-    <title>Isabella Lyra Makeup</title>
-    <link rel="stylesheet" href="/assets/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">    
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
 
-</head>
-<body>
-    <header>
-        <div class="navegacao">
-            <a href="https://www.instagram.com/isabellalyramakeup/"><img src="/images/logo-instagram.png" width="25" height="25" alt="logo do instagram"></a>
-            <a href="https://api.whatsapp.com/send/?phone=5581986825827&text&type=phone_number&app_absent=0"> <img src="/images/logo-whatsapp.png" width="25" height="25" alt="logo do whatsapp"></a>
-        </div>
-    </header>
-    <main>
-        <div>
-            <img src="/images/LOGO8.png"  id="logo" alt="Isabella Lyra">
-        </div>
-        
-        <div class="bemvindo">
-            <img style="opacity: 50%;" src="/images/imagem1.jpg" alt="maquiagem">
-                <div class="textobemvindo">
-                    <h1 style="font-size: max(19px, 5vw); margin: 6%;" class="textobemvindo">BEM-VINDO(A) À <br> ISABELLA LYRA MAKEUP</h1>
-                    <P  style="font-size: max(8px, 2vw); margin: 6%;" class="textobemvindo">Maquiar é, dar vida a arte.</P>
-                </div>
-        </div>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.18.0/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.18.0/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.18.0/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/9.18.0/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/9.18.0/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/9.18.0/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/9.18.0/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/9.18.0/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/9.18.0/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/9.18.0/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
-        <div class="servicos">
-            <div class="titulo">
-                <h2>O QUE POSSO FAZER POR VOCÊ</h2>
-            </div>
+    <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="message">
+      <h2>Welcome</h2>
+      <h1>Firebase Hosting Setup Complete</h1>
+      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
+      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    </div>
+    <p id="load">Firebase SDK Loading&hellip;</p>
 
-            <div class="servico">
-                    <h3>
-                        SESSÃO FOTOGRÁFICA DE MAQUIAGEM
-                    </h3>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadEl = document.querySelector('#load');
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.firestore().doc('/foo/bar').get().then(() => { });
+        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        // firebase.analytics(); // call to activate
+        // firebase.analytics().logEvent('tutorial_completed');
+        // firebase.performance(); // call to activate
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
-                    <p>
-                        Buscando algo ousado e bonito? Seja para simplesmente exaltar a sua beleza ou capturar um lado diferente seu, posso fazer isso acontecer. 
-                        Vamos discutir sobre o visual dos seus sonhos e, em questão minutos, ele se tornará realidade. 
-                        Meu trabalho é fazer você se sentir brilhante para aqueles momentos que se tornarão memórias inesquecíveis.
-                        <img src="/images/imagem-servico1.jpg" alt="Maquiagem para sessão fotográfica";>
-                    </p>
-            </div>
-
-            <div class="servico">
-                    <h3>
-                        MAQUIAGEM PARA NOIVAS
-                    </h3>
-                    <p>Adoro contribuir com algo a mais para meus clientes sempre que precisam. 
-                        Quando você procura os meus serviços, sei que está buscando algo especial e é para isso que estou aqui. 
-                        Para cada ocasião, uso produtos duradouros de alta qualidade que vão deixar você simplesmente radiante. 
-                        Entre em contato para conseguir o visual que sempre sonhou.
-                        <img src="/images/imagem-servico2.jpg" alt="Maquiagem para noivas">
-                    </p>
-            </div>
-
-            <div class="servico">
-                    <h3>
-                        MAQUIAGEM COM ESTILO
-                    </h3>
-                    <p>Agora é a hora perfeita para uma transformação total. 
-                        Após uma sessão de maquiagem comigo, você se sentirá mais leve e ainda mais atraente. 
-                        Utilizo a teoria das cores e outras técnicas para dar a cada cliente a aparência mais adequada. 
-                        Me procure para que eu possa garantir o visual exclusivo que corresponde ao seu estilo.
-                        <img src="/images/imagem-servico3.jpg" alt="Maquiagem com estilo">
-                    </p>
-            </div>   
-        </div>
-    </main>
-    
-    <footer>
-        <div class="informacoes">
-            <h2>Informações e Agendamentos</h2>
-            <br> 
-            <a href="mailto:isabelladelyra@gmail.com">isabelladelyra@gmail.com</a>
-            <br>
-            <br>
-            <address>Recife - PE</address>
-            <br>
-            <a href="https://api.whatsapp.com/send/?phone=5581986825827&text&type=phone_number&app_absent=0"> <img src="/images/logo-whatsapp.png" width="20" height="20" alt="logo do whatsapp"></a>
-            <a href="tel:+5581986825827">Whatsapp (81) 98682-5827</a>
-            
-        </div>
-    </footer>
-</body>
-
-
-<script src="/assets/script.js"></script>
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth', 
+            'database', 
+            'firestore',
+            'functions',
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
 </html>
